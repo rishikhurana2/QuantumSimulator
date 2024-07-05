@@ -5,9 +5,9 @@ python3 Simulator.py {QASM FILENAME}
 Where QASM FILENAME is any .qasm file that you wish to run the simulator on. Note that the accepted QASM files can only contain Hadamard gates, NOT gates, Controlled NOT gates, T gates, 
 and the conjugate transpose of T gates. An example format with a few of the accepted gates is below:
 
-OPENQASM 2.0;
-include "qelib1.inc";
-qreg q[16];
+OPENQASM 2.0;\n
+include "qelib1.inc";\n
+qreg q[16];\n
 creg c[16];
 cx q[12],q[15];
 h q[12];
